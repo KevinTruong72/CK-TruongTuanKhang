@@ -1,0 +1,720 @@
+<!doctype html>
+<!-- This site was created in Vsdio. https://vsdio.com --><!-- Last Published: Tue Nov 05 2024 09:56:40 Europe/Berlin+0100 -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Expanding flex cards with animation</title>
+    <link rel="canonical" href="">
+    <link href="https://vsdio.com/media/assets/bootstrap-5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://vsdio.com/media/assets/icons-1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .vs-collapse>i {
+            transition-duration: 0.3s;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transform: rotate(90deg);
+        }
+
+        .vs-collapse.collapsed>i {
+            transform: rotate(0deg);
+        }
+
+        .h-300px {
+            height: 300px
+        }
+
+        .font-size-40px {
+            font-size: 40px;
+        }
+
+        .font-size-20px {
+            font-size: 20px;
+        }
+
+        .width-96px {
+            width: 96px;
+        }
+
+        .teams {
+            display: flex;
+            gap: 16px;
+            width: 1000px;
+            height: 500px;
+            justify-content: center
+        }
+
+        .team-info {
+            background-image: url(https://media.vsdio.com/vsae34a498e700a408258ce9da38dea9ae717f1997/albert-dera-ILip77SbmOE-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-attachment: scroll;
+            background-size: auto;
+            min-width: 60px;
+            flex-grow: 1;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            border-bottom-left-radius: 12px;
+            transition: flex 600ms ease 0ms, transform 600ms ease 0ms
+        }
+
+        .team-info:hover {
+            flex-grow: 5;
+            transform: scale3d(1.1, 1.1, 1);
+        }
+
+        .team-info-2 {
+            background-image: url(https://media.vsdio.com/vsae34a498e700a408258ce9da38dea9ae717f1997/jake-nackos-IF9TK5Uy-KI-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-attachment: scroll;
+            background-size: auto
+        }
+
+        .team-info-3 {
+            background-image: url(https://media.vsdio.com/vsae34a498e700a408258ce9da38dea9ae717f1997/andrew-power-9ZXpKFlQkjo-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-attachment: scroll;
+            background-size: auto
+        }
+
+        .container-teams {
+            display: flex;
+            justify-content: center
+        }
+    </style>
+</head>
+
+<body data-id="vs7537d55b916b7b62c2fdf5c213e38700b6294fb4">
+    <section class=" py-5">
+        <div class="container container-teams">
+            <div class=" teams">
+                <div class=" team-info"></div>
+                <div class=" team-info team-info-2"></div>
+                <div class=" team-info team-info-3"></div>
+                <div class=" team-info"></div>
+                <div class=" team-info"></div>
+                <div class=" team-info"></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 mb-5 pb-md-3">
+              <div class="section-title text-center">
+                <p class="text-uppercase small">Our Service Holders</p>
+                <h2 class="mb-4 fw-semibold">Trusted By 1.2K+ Peoples</h2>
+                <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing. egestas cursus pellentesque dignissim dui, congue. Vel etiam ut</p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded bg-white p-4 shadow-lg">
+                <div class="d-block d-sm-flex align-items-center mb-3">
+                  <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/thumbnail/diego-hernandez-1.jpg" alt="Leslie Alexander" class="img-fluid rounded" width="65" height="66" />
+                  <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
+                    <h4 class="fw-medium fs-5">Leslie Alexander</h4>
+                    <p class="mb-0">Web Designer</p>
+                  </div>
+                </div>
+                <div>Lorem ipsum dolor
+                  <a href="#">@reamansimond</a>demina egestas sit purus felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded bg-white p-4 shadow-lg">
+                <div class="d-block d-sm-flex align-items-center mb-3">
+                  <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/thumbnail/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" alt="Arlene McCoy" class="img-fluid rounded" width="65" height="66" />
+                  <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
+                    <h4 class="fs-5 fw-medium">Arlene McCoy</h4>
+                    <p class="mb-0">Content Strategist</p>
+                  </div>
+                </div>
+                <div>Lorem ipsum dolor
+                  <a href="#">@reamansimond</a>demina egestas sit purus felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded bg-white p-4 shadow-lg">
+                <div class="d-block d-sm-flex align-items-center mb-3">
+                  <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/thumbnail/albert-dera-ILip77SbmOE-unsplash.jpg" alt="Marvin McKinney" class="img-fluid rounded" width="65" height="66" />
+                  <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
+                    <h4 class="fs-5 fw-medium">Marvin McKinney</h4>
+                    <p class="mb-0">Video Game Writer</p>
+                  </div>
+                </div>
+                <div>Lorem ipsum dolor
+                  <a href="#">@reamansimond</a>demina egestas sit purus felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded bg-white p-4 shadow-lg">
+                <div class="d-block d-sm-flex align-items-center mb-3">
+                  <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/thumbnail/andrew-power-9ZXpKFlQkjo-unsplash.jpg" alt="Devon Lane" class="img-fluid rounded" width="65" height="66" />
+                  <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
+                    <h4 class="fs-5 fw-medium">Devon Lane</h4>
+                    <p class="mb-0">Nursing Assistant</p>
+                  </div>
+                </div>
+                <div>Lorem ipsum dolor
+                  <a href="#">@reamansimond</a>demina egestas sit purus felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded bg-white p-4 shadow-lg">
+                <div class="d-block d-sm-flex align-items-center mb-3">
+                  <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/thumbnail/vicky-hladynets-1.jpg" alt="Bessie Cooper" class="img-fluid rounded" width="65" height="66" />
+                  <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
+                    <h4 class="fs-5 fw-medium">Bessie Cooper</h4>
+                    <p class="mb-0">Video Game Writer</p>
+                  </div>
+                </div>
+                <div>Lorem ipsum dolor
+                  <a href="#">@reamansimond</a>demina egestas sit purus felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="rounded bg-white p-4 shadow-lg">
+                <div class="d-block d-sm-flex align-items-center mb-3">
+                  <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/thumbnail/oguz-yagiz-kara-1.jpg" alt="Kathryn Murphy" class="img-fluid rounded" width="65" height="66" />
+                  <div class="mt-3 mt-sm-0 ms-0 ms-sm-3">
+                    <h4 class="fs-5 fw-medium">Kathryn Murphy</h4>
+                    <p class="mb-0">Film Critic</p>
+                  </div>
+                </div>
+                <div>Lorem ipsum dolor
+                  <a href="#">@reamansimond</a>demina egestas sit purus felis arcu. Vitae, turpisds tortr etiam faucibus ac suspendisse.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-light pb-5 pg-lib-item pt-5">
+        <div class="container pb-5 pt-5">
+          <div class="align-items-center row mb-5">
+            <div class="col-lg-7">
+              <h6 class="small">Services</h6>
+              <h2 class="fw-semibold">We can do useful things for our clients</h2>
+              <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+            </div>
+            <div class="col-lg-auto ms-auto">
+              <a href="#" class="btn px-4 py-2 fw-medium btn-primary" data-type="external">Read More</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-3 pb-3 pt-3 col-md-6">
+              <div class="bg-white d-block pb-5 ps-4 pe-4 pt-5 shadow rounded">
+                <div class="mb-3">
+                  <i class="fs-1 bi bi-code-slash text-danger"></i>
+                </div>
+                <h4 class="fs-5 fw-medium">Development</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                <a href="#" class="text-decoration-none">Learn More</a>
+              </div>
+            </div>
+            <div class="col-xl-3 pb-3 pt-3 col-md-6">
+              <div class="bg-white d-block pb-5 ps-4 pe-4 pt-5 shadow rounded mt-md-5">
+                <div class="mb-3">
+                  <i class="fs-1 bi bi-palette text-success"></i>
+                </div>
+                <h4 class="fs-5 fw-medium">Product Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                <a href="#" class="text-decoration-none">Learn More</a>
+              </div>
+            </div>
+            <div class="col-xl-3 pb-3 pt-3 col-md-6">
+              <div class="bg-white d-block pb-5 ps-4 pe-4 pt-5 shadow rounded">
+                <div class="mb-3">
+                  <i class="fs-1 bi bi-lightbulb text-danger"></i>
+                </div>
+                <h4 class="fs-5 fw-medium">UI/UX Research</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                <a href="#" class="text-decoration-none">Learn More</a>
+              </div>
+            </div>
+            <div class="col-xl-3 pb-3 pt-3 col-md-6">
+              <div class="bg-white d-block pb-5 ps-4 pe-4 pt-5 shadow rounded mt-md-5">
+                <div class="mb-3">
+                  <i class="fs-1 bi bi-graph-up-arrow text-primary"></i>
+                </div>
+                <h4 class="fs-5 fw-medium">Digital Marketing</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue tortor.</p>
+                <a href="#" class="text-decoration-none">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="text-center mb-5 pb-xl-3">
+                <h2 class="mb-3 fw-semibold">Pricing Plans</h2>
+                <p class="lead">The price will increase as the conference approaches. Grab your ticket today. Number of tickets is limited.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card">
+                  <div class="card-body bg-white shadow rounded-2 text-center p-4">
+                    <div class="mb-5">
+                      <h3 class="mb-3 py-2">Startup</h3>
+                      <h5 class="fw-semibold">
+                        <span>$9.00</span>
+                        <del class="text-body-tertiary ms-1">$29</del>
+                      </h5>
+                    </div>
+                    <ul class="list-unstyled text-start">
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">1 Day Access</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Breakfast, Lunch &amp; party</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Live video online Access</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                        </svg>
+                        <span class="ms-3">Speaker Meet and Greets</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                        </svg>
+                        <span class="ms-3">Get a Certificate</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                        </svg>
+                        <span class="ms-3">Assigned Inbound Expert</span>
+                      </li>
+                    </ul>
+                    <div class="mt-5">
+                      <a href="#" class="btn btn-light fw-medium px-4 py-2" data-type="external">Register Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card border-primary">
+                  <div class="card-body bg-white shadow rounded-2 text-center px-4 p-4">
+                    <div class="mb-5">
+                      <h3 class="mb-3 py-2">Advanced</h3>
+                      <h5 class="fw-semibold">
+                        <span>$49.00</span>
+                        <del class="text-body-tertiary ms-1">$129</del>
+                      </h5>
+                    </div>
+                    <ul class="list-unstyled text-start">
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">3 Day Access</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Breakfast, Lunch &amp; party</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Live video online Access</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Speaker Meet and Greets</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Get a Certificate</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-x-circle-fill text-danger" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"></path>
+                        </svg>
+                        <span class="ms-3">Assigned Inbound Expert</span>
+                      </li>
+                    </ul>
+                    <div class="mt-5">
+                      <a href="#" class="btn fw-medium btn-primary px-4" data-type="external">Register Now</a>
+                    </div>
+                  </div>
+                </div>
+                <!--card-->
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <!--card-->
+                <div class="card">
+                  <div class="card-body bg-white shadow rounded-2 text-center p-4">
+                    <div class="mb-5">
+                      <h3 class="mb-3 py-2">Business</h3>
+                      <h5 class="fw-semibold">
+                        <span>$89.00</span>
+                        <del class="text-body-tertiary ms-1">$199</del>
+                      </h5>
+                    </div>
+                    <ul class="list-unstyled text-start">
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">3 Day Access</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Breakfast, Lunch &amp; party</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Live video online Access</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Speaker Meet and Greets</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Get a Certificate</span>
+                      </li>
+                      <li class="mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <span class="ms-3">Assigned Inbound Expert</span>
+                      </li>
+                    </ul>
+                    <div class="mt-5">
+                      <a href="#" class="btn btn-light fw-medium px-4" data-type="external">Register Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-xl-5 py-5">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-xl-6 offset-xl-3 col-md-12 ">
+              <div class="text-center mb-5 pb-lg-5">
+                <small class="text-uppercase text-body-tertiary">Portfolio</small>
+                <h2 class="px-6 mt-4 fw-semibold">Handful of items from
+                  <span class="text-primary" data-vs-inline-format="yes">my portfolio.</span>
+                </h2>
+                <p class="mb-0">Here are a handful of items from my portfolio over the
+                  <span class="text-dark" data-vs-inline-format="yes">last 13 years.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pb-5 ">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6 ">
+                <a href="#" class="text-decoration-none" data-type="external">
+                  <div class="card ">
+                    <div class="card-body p-4 pb-0">
+                      <div class="mb-4">
+                        <h4 class="mb-4 fs-5">JAMstack &amp; Headless web development agency</h4>
+                        <span class="bg-light-subtle border border-light-subtle text-light-emphasis rounded-2 small px-2 py-1">Figma</span>
+                        <span class="bg-light-subtle border border-light-subtle text-light-emphasis rounded-2 small px-2 py-1">Bootstrap</span>
+                      </div>
+                      <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/about-06-03.jpg" alt="portfolio" class="img-fluid rounded-top shadow-sm" />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                <a class="text-decoration-none" href="#" data-type="external">
+                  <div class="card ">
+                    <div class="card-body pb-0 p-4">
+                      <div class="mb-4">
+                        <h4 class="mb-4 fs-5">Banking and Finance landing page design</h4>
+                        <span class="bg-light-subtle border border-light-subtle text-light-emphasis rounded-2 small px-2 py-1">UI Design</span>
+                        <span class="bg-light-subtle border border-light-subtle text-light-emphasis rounded-2 small px-2 py-1">Next.js</span>
+                      </div>
+                      <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/about-06-04.jpg" alt="portfolio" class="img-fluid rounded-top shadow-sm" />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6 ">
+                <a class="text-decoration-none" href="#" data-type="external">
+                  <div class="card">
+                    <div class="card-body pb-0 p-4">
+                      <div class="mb-6 mb-4">
+                        <h4 class="mb-4 fs-5">Accounting software web app development</h4>
+                        <span class="bg-light-subtle border border-light-subtle text-light-emphasis rounded-2 small px-2 py-1">Web Development</span>
+                        <span class="bg-light-subtle border border-light-subtle text-light-emphasis rounded-2 small px-2 py-1">React JS</span>
+                      </div>
+                      <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/about-06-05.jpg" alt="portfolio" class="img-fluid rounded-top shadow-sm" />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-5 py-xl-5">
+        <div class="container ">
+          <div class="row align-items-center ">
+            <div class="col-lg-4 col-md-8 col-12 ">
+              <div class="mb-lg-0 mb-4">
+                <small class="text-uppercase">MY SKILLS</small>
+                <h2 class="my-3 fw-semibold">My areas of
+                  <span class="text-primary" data-vs-inline-format="yes">expertise</span>
+                </h2>
+                <p class="mb-5">Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis elit interdum. Duis mollis, ligula magna mollis.</p>
+                <a href="#!" class="btn btn-dark px-4 py-2 fw-medium" data-type="external">View More Details</a>
+              </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1 col-12 ">
+              <div class="row ">
+                <div class="col-md-6 ">
+                  <div class="card bg-danger bg-opacity-10 border-0 mb-4">
+                    <div class="card-body ">
+                      <div class="mb-4 ">
+                        <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/figma.svg" alt="html" />
+                      </div>
+                      <div class="mb-4 ">
+                        <h4 class="fs-5">Figma UI Design</h4>
+                        <p class="mb-0">Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida.</p>
+                      </div>
+                      <a href="#!" class="icon-link icon-link-hover link-danger text-decoration-none">Link Text
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card bg-warning bg-opacity-10 border-0 mb-lg-0 mb-4">
+                    <div class="card-body ">
+                      <div class="mb-4 ">
+                        <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/nodej.svg" alt="html" />
+                      </div>
+                      <div class="mb-4 ">
+                        <h4 class="fs-5">Node.js
+                          <br />
+                        </h4>
+                        <p class="mb-0">Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida.</p>
+                      </div>
+                      <a href="#!" class="icon-link icon-link-hover link-warning text-decoration-none">Link Text
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-md-5 ">
+                  <div class="card bg-info bg-opacity-10 border-0 mb-4">
+                    <div class="card-body ">
+                      <div class="mb-4 ">
+                        <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/react.svg" alt="html" />
+                      </div>
+                      <div class="mb-4 ">
+                        <h4 class="fs-5">React</h4>
+                        <p class="mb-0">Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida.</p>
+                      </div>
+                      <a href="#!" class="icon-link icon-link-hover link-info text-decoration-none">Link Text
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card bg-success bg-opacity-10 border-0 mb-lg-0 mb-4">
+                    <div class="card-body ">
+                      <div class="mb-4 ">
+                        <img src="https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/html5.svg" alt="html" />
+                      </div>
+                      <div class="mb-4">
+                        <h4 class="fs-5">HTML &amp; CSS</h4>
+                        <p class="mb-0">Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida.</p>
+                      </div>
+                      <a href="#!" class="icon-link icon-link-hover link-success text-decoration-none">Link Text
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 ">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-12 ">
+              <div class="text-center mb-7 mb-5 ">
+                <h2 class="fw-semibold">Frequently asked questions</h2>
+                <p class="mb-0">Can’t find any answer for your question?
+                  <br />Ask our
+                  <a href="#" class="text-primary" data-vs-inline-format="yes">customer support</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-10 offset-lg-1 col-md-12 col-12 ">
+              <div class="accordion " id="accordion-parent">
+                <div class="border mb-2 rounded-3 p-3 ">
+                  <h4 class="mb-0 fs-5 ">
+                    <a href="#" class="text-reset d-flex justify-content-between align-items-center text-decoration-none" data-bs-target="#collapse-01" aria-expanded="false" aria-controls="collapse-01" data-bs-toggle="collapse">Can I trial block before paying?
+                      <span class="chevron-arrow" data-vs-inline-format="yes">
+                        <i class="bi bi-chevron-down" data-vs-inline-format="yes"></i>
+                      </span>
+                    </a>
+                  </h4>
+                  <div id="collapse-01" class="accordion-collapse collapse " data-bs-parent="#accordion-parent">
+                    <div class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum adipisci possimus et. Iusto pariatur iste nam incidunt ratione modi.</div>
+                  </div>
+                </div>
+                <div class="border mb-2 rounded-3 p-3 ">
+                  <h4 class="mb-0 fs-5 ">
+                    <a href="#" class="text-reset d-flex justify-content-between align-items-center text-decoration-none" data-bs-target="#collapse-02" aria-expanded="true" aria-controls="collapse-02" data-bs-toggle="collapse">How are additional plan billed?
+                      <span class="chevron-arrow" data-vs-inline-format="yes">
+                        <i class="bi bi-chevron-down" data-vs-inline-format="yes"></i>
+                      </span>
+                    </a>
+                  </h4>
+                  <div id="collapse-02" class="accordion-collapse collapse " data-bs-parent="#accordion-parent">
+                    <div class="mt-3">Sed urna felis, dapibus quis leo nec, luctus auctor augue. Nam gravida placerat sem vitae rutrum. Integer accumsan, enim et facilisis eleifend, ante ligula ornare nulla, sed pharetra tortor diam eget magna.</div>
+                  </div>
+                </div>
+                <div class="border mb-2 rounded-3 p-3 ">
+                  <h4 class="mb-0 fs-5 ">
+                    <a href="#" class="text-reset d-flex justify-content-between align-items-center text-decoration-none" data-bs-target="#collapse-03" aria-expanded="false" aria-controls="collapse-03" data-bs-toggle="collapse">When should I change my plan?
+                      <span class="chevron-arrow" data-vs-inline-format="yes">
+                        <i class="bi bi-chevron-down" data-vs-inline-format="yes"></i>
+                      </span>
+                    </a>
+                  </h4>
+                  <div id="collapse-03" class="accordion-collapse collapse " data-bs-parent="#accordion-parent">
+                    <div class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur cum doloremque iusto molestiae. Minus beatae quam cumque modi quidem asperiores aliquam pariatur in iste.</div>
+                  </div>
+                </div>
+                <div class="border mb-2 rounded-3 p-3 ">
+                  <h4 class="mb-0 fs-5 ">
+                    <a href="#" class="text-reset d-flex justify-content-between align-items-center text-decoration-none" data-bs-target="#collapse-04" aria-expanded="false" aria-controls="collapse-04" data-bs-toggle="collapse">What payment methods do you offer?
+                      <span class="chevron-arrow" data-vs-inline-format="yes">
+                        <i class="bi bi-chevron-down" data-vs-inline-format="yes"></i>
+                      </span>
+                    </a>
+                  </h4>
+                  <div id="collapse-04" class="accordion-collapse collapse " data-bs-parent="#accordion-parent">
+                    <div class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur cum doloremque iusto molestiae. Minus beatae quam cumque modi quidem asperiores aliquam pariatur in iste.</div>
+                  </div>
+                </div>
+                <div class="border mb-2 rounded-3 p-3 ">
+                  <h4 class="mb-0 fs-5 ">
+                    <a href="#" class="text-reset d-flex justify-content-between align-items-center text-decoration-none" data-bs-target="#collapse-05" aria-expanded="false" aria-controls="collapse-05" data-bs-toggle="collapse">What is your refund policy?
+                      <span class="chevron-arrow" data-vs-inline-format="yes">
+                        <i class="bi bi-chevron-down" data-vs-inline-format="yes"></i>
+                      </span>
+                    </a>
+                  </h4>
+                  <div id="collapse-05" class="accordion-collapse collapse " data-bs-parent="#accordion-parent">
+                    <div class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur cum doloremque iusto molestiae. Minus beatae quam cumque modi quidem asperiores aliquam pariatur in iste.</div>
+                  </div>
+                </div>
+                <div class="border mb-2 rounded-3 p-3 ">
+                  <h4 class="mb-0 fs-5 ">
+                    <a href="#" class="text-reset d-flex justify-content-between align-items-center text-decoration-none" data-bs-target="#collapse-06" aria-expanded="false" aria-controls="collapse-06" data-bs-toggle="collapse">How are paid plans billed when moving other plan?
+                      <span class="chevron-arrow" data-vs-inline-format="yes">
+                        <i class="bi bi-chevron-down" data-vs-inline-format="yes"></i>
+                      </span>
+                    </a>
+                  </h4>
+                  <div id="collapse-06" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
+                    <div class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore tenetur cum doloremque iusto molestiae. Minus beatae quam cumque modi quidem asperiores aliquam pariatur in iste.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-lg-4">
+        <div class="container py-xl-5">
+          <div class="row g-4 ">
+            <div class="col-xl-5 col-lg-6 col-12 ">
+              <div class="mb-4 ">
+                <small class="text-uppercase">who we are</small>
+                <h2 class="mb-4 mt-3 fw-semibold">Believes in the power of creative strategy.</h2>
+                <p class="mb-3">We are a web design and development agency. We specialise in bridging the gap between our clients and their goals.</p>
+                <p class="mb-0">Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Amet mattis vulputate enim nulla aliquet porttitor lacus.</p>
+              </div>
+              <a href="./about.html" class="icon-link icon-link-hover text-decoration-none">More about us
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="col-xl-6 offset-xl-1 col-lg-6 col-12 ">
+              <div class="row g-4 ">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                  <a href="#">
+                    <div class="rounded-3" style="background-image: url(https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/ian-dooley.jpg); background-repeat: no-repeat; height: 386px; background-size: cover;"></div>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                  <a href="#">
+                    <div class="rounded-3 mb-4" style="background-image: url(https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/nathan-anderson.jpg); background-repeat: no-repeat; height: 180px; background-size: cover;"></div>
+                  </a>
+                  <a href="#">
+                    <div class="rounded-3" style="background-image: url(https://media.vsdio.com/vsdf0da966f7fb9748f7d9745dfdb8908caa536f44/priscilla.jpg); background-repeat: no-repeat; height: 180px; background-size: cover;"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+
+</html>
