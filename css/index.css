@@ -1,0 +1,22 @@
+.logo{
+    height: 100px;
+}
+.thanh{
+    display: flex;
+    justify-content: space-around;
+}
+.caro{
+    height: 350px;
+}
+.pca{
+    height: 300px;
+    width: 80%;
+}
+.slogan{
+    height: 60px;
+}
+#showData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
