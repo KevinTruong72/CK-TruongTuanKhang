@@ -1,0 +1,39 @@
+.logo{
+    height: 100px;
+}
+.thanh{
+    display: flex;
+    justify-content: space-around;
+}
+.caro{
+    height: 350px;
+}
+.pca{
+    height: 300px;
+    width: 80%;
+}
+.slogan{
+    height: 60px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+.bando{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tenuser{
+    padding-left: 10px;
+}
